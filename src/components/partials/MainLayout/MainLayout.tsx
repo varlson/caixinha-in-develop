@@ -21,21 +21,16 @@ function MainLayout({ children }: { children: ReactNode }) {
             fines: resp.datas.data.fines,
             purchase: resp.datas.data.purchase,
             monthStatus: resp.datas.data.monthStatus,
+            resume: resp.datas.data.resume,
           },
         };
 
         setDatas(respDatas);
-        // console.log("end of fetch");
-        // console.log(respDatas);
         setIsLoading(false);
       } else {
         setErrorMsg(resp.error || "Houve um erro interno");
       }
     };
-
-    // if (!datas.datas.monthStatus.length) {
-    //   fetchDatas();
-    // }
   }, [setDatas, datas.datas.monthStatus.length, setErrorMsg]);
 
   if (isLoading) return <p>Is loading ...</p>;
@@ -44,7 +39,7 @@ function MainLayout({ children }: { children: ReactNode }) {
       <nav>
         <Navbar />
       </nav>
-      <main className="bg-appLigth min-h-[calc(100vh-160px)] p-2">
+      <main className="bg-appLigth overflow-scroll h-[calc(100vh-160px)] p-2">
         {children}
       </main>
       <footer>

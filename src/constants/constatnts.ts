@@ -253,3 +253,61 @@ export const damymonths = [
     ],
   },
 ];
+
+export const damyfines = [
+  {
+    resident_name: "Estefanio",
+    desc: "Não lavou panos ",
+    date: " 18/02/2024 ",
+    status: false,
+  },
+  {
+    resident_name: "Estefanio",
+    desc: " Não lavou banheiro ",
+    date: " 12/02/2024 ",
+    status: false,
+  },
+  {
+    resident_name: "Mani",
+    desc: "Não lavou panos ",
+    date: " 18/02/2024 ",
+    status: false,
+  },
+  {
+    resident_name: "Zico",
+    desc: "Não fez a munutenção durante a sua semana ",
+    date: " 18/11/2023 ",
+    status: false,
+  },
+];
+
+export const damypurchase = [
+  {
+    desc: "filtro de papel e papel higienico",
+    author: "Manito",
+    value: 44.56,
+    link: "https://drive.google.com/file/d/1B8XmZbKL_8Rqy02v6kPwJ4Nn1_4UnHRA/view?usp=drive_link",
+    date: "4/5/2024",
+  },
+  {
+    desc: "Internet",
+    author: "Manito",
+    value: 148.97,
+    link: "https://drive.google.com/file/d/1vaY7yzIYDze_dd6fB4pClBldmdik6fjK/view?usp=drive_link",
+    date: "8/5/2024",
+  },
+  {
+    desc: "compra parcial",
+    author: "Manito",
+    value: 14.37,
+    link: "https://drive.google.com/file/d/1DjGQZzbwcX5gVXtWsvkvrzNweQTeBh5F/view?usp=sharing",
+    date: "13/5/2024",
+  },
+  {
+    desc: "compra geral",
+    author: "Manito e Estefanio",
+    value: 160.82,
+    link: "https://drive.google.com/file/d/1DeKFbcDHm-NEJNci4aooEHH8jfgzom0P/view?usp=sharing",
+    date: "13/5/2024",
+  },
+];
