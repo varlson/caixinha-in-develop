@@ -12,7 +12,7 @@ function Footer() {
         <Link href="/">
           <LiaHomeSolid className="text-4xl" />
         </Link>
-        <Link href="/moradores">
+        <Link href="/mes">
           <PiUsersThreeThin className="text-4xl" />
         </Link>
 

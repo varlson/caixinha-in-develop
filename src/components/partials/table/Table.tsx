@@ -18,7 +18,7 @@ function TableUI({ semester }: { semester: number }) {
       <div className="col-span-4 text-center ">
         {damymonths.map((morador, index) => (
           <p className="border p-1" key={index}>
-            {morador.resident_name}
+            {morador.resident_name.slice(0, 11)}
           </p>
         ))}
       </div>
