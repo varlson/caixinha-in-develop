@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <p className="bg-blue-400">Hello world</p>
-      <p>{datas.datas.purchase[0].author}</p>
+      {/* <p>{datas.datas.purchase[0].author}</p> */}
     </div>
   );
 }

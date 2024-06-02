@@ -12,15 +12,15 @@ function Footer() {
         <Link href="/">
           <LiaHomeSolid className="text-4xl" />
         </Link>
-        <Link href="/">
+        <Link href="/moradores">
           <PiUsersThreeThin className="text-4xl" />
         </Link>
 
-        <Link href="/">
+        <Link href="/compras">
           <BiPurchaseTag className="text-4xl" />
         </Link>
 
-        <Link href="/">
+        <Link href="/multas">
           <IoTicketOutline className="text-4xl" />
         </Link>
       </div>
