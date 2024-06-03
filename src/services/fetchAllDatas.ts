@@ -7,7 +7,9 @@ export const FetchAllDatas = async () => {
   return new Promise<SuccessFetch | { status: false; error: string }>(
     async (resolve, reject) => {
       try {
-        const url = process.env.NEXT_PUBLIC_ALL_DATAS;
+        const url =
+          process.env.NEXT_PUBLIC_ALL_DATAS ||
+          "https://script.google.com/macros/s/AKfycbx-ymT5Zz2S48r9Opd3syExsxpFf0us2GSmhVRl0YTz_EjrEyJVlWfRWTKMZE5vbrrayg/exec";
 
         if (!url) {
           throw new Error("Url inválido");
