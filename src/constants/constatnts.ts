@@ -311,3 +311,10 @@ export const damypurchase = [
     date: "13/5/2024",
   },
 ];
+
+export const damyresume = {
+  initialBalance: 1014.08,
+  totalUsed: 368.72,
+  currentBalance: 645.36,
+  currentMonth: "Maio",
+};
