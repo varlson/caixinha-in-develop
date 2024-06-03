@@ -35,6 +35,8 @@ function MainLayout({ children }: { children: ReactNode }) {
 
     if (!datas.datas.monthStatus.length) {
       fetchDatas();
+    } else {
+      setIsLoading(false);
     }
   }, [setDatas, datas.datas.monthStatus.length, setErrorMsg]);
 
