@@ -6,10 +6,11 @@ import { AllDatasType } from "@/types/types";
 import React, { ReactNode, useEffect, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import Spinner from "@/components/ui/spinner/Spinner";
 
 function MainLayout({ children }: { children: ReactNode }) {
   const { setDatas, datas, setErrorMsg } = useAppContext();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchDatas = async () => {
@@ -31,9 +32,18 @@ function MainLayout({ children }: { children: ReactNode }) {
         setErrorMsg(resp.error || "Houve um erro interno");
       }
     };
+
+    if (!datas.datas.monthStatus.length) {
+      fetchDatas();
+    }
   }, [setDatas, datas.datas.monthStatus.length, setErrorMsg]);
 
-  if (isLoading) return <p>Is loading ...</p>;
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <Spinner />
+      </div>
+    );
   return (
     <div>
       <nav>

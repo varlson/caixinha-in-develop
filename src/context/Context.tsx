@@ -1,5 +1,5 @@
 "use client";
-import { damyfines, damypurchase } from "@/constants/constatnts";
+import { damyfines, damypurchase, damyresume } from "@/constants/constatnts";
 import { AllDatasType, AppWrapperType } from "@/types/types";
 import React, { createContext, ReactNode, useContext, useState } from "react";
 
@@ -9,12 +9,7 @@ const AppContext = createContext<AppWrapperType>({
       fines: damyfines,
       purchase: damypurchase,
       monthStatus: [],
-      resume: {
-        initialBalance: 0,
-        currentBalance: 0,
-        currentMonth: "",
-        totalUsed: 0,
-      },
+      resume: damyresume,
     },
   },
   setDatas: (datas: AllDatasType) => {},
@@ -34,12 +29,7 @@ export default function AppWrapper({ children }: { children: ReactNode }) {
       fines: damyfines,
       purchase: damypurchase,
       monthStatus: [],
-      resume: {
-        initialBalance: 0,
-        currentBalance: 125.12,
-        currentMonth: "Junho",
-        totalUsed: 0,
-      },
+      resume: damyresume,
     },
   });
   const setDatas = (datas: AllDatasType) => {
