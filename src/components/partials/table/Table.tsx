@@ -20,7 +20,7 @@ function TableUI({ semester }: { semester: number }) {
     <div className="grid grid-cols-12 mt-2">
       <div className="col-span-4 text-center ">
         {datas.datas.monthStatus.map((morador, index) => (
-          <p className="border p-1" key={index}>
+          <p className="border h-[30px] bg-slate-300" key={index}>
             {morador.resident_name.slice(0, 11)}
           </p>
         ))}
@@ -33,7 +33,7 @@ function TableUI({ semester }: { semester: number }) {
           >
             {userMonth.months.slice(start, end).map((month, index) => (
               <div
-                className="border border-slate-300 w-full flex flex-col items-center p-1"
+                className="border bg-slate-300 h-[30px] w-full flex flex-col items-center"
                 key={index}
               >
                 <Status

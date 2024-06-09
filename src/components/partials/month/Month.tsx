@@ -12,7 +12,7 @@ function Month({ semester }: { semester: number }) {
       <div className="col-span-8 text-center border-b border-slate-400">
         <div className="grid grid-cols-6">
           {mesesDoAno.slice(start, end).map((mes, index) => (
-            <p className="border p-1" key={index}>
+            <p className="border" key={index}>
               {mes.slice(0, 3)}
             </p>
           ))}
