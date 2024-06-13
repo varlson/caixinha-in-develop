@@ -318,3 +318,26 @@ export const damyresume = {
   currentBalance: 645.36,
   currentMonth: "Maio",
 };
+
+export const links = [
+  {
+    label: "Escala de máquina",
+    href: "/escala",
+    desc: "Escala de Uso de Máquina",
+  },
+  {
+    label: "Planilha de casa",
+    href: "https://docs.google.com/spreadsheets/d/1OuQtXBRgLzr3VOJA2k0nLXBq43CTnqTROh24k_u7JbY/edit?usp=sharing",
+    desc: "Planilha de Caixinha",
+  },
+  {
+    label: "Compra",
+    href: "https://docs.google.com/document/d/1X2IUqo6GbtlCnFL-W6WSKdrLa-fidaFQihLW7BbeHsg/edit?usp=drive_link",
+    desc: "Lista de compras",
+  },
+  {
+    label: "Protocolo de faxina",
+    href: "https://drive.google.com/file/d/1vxvxLvshh0NJrT5R5QILidYfj-H4S7-S/view?usp=drive_link",
+    desc: "Proto de faxina",
+  },
+];
