@@ -6,10 +6,12 @@ import { AllDatasType } from "@/types/types";
 import React, { ReactNode, useEffect, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import Spinner from "@/components/ui/spinner/Spinner";
+import Error from "../error/Error";
 
 function MainLayout({ children }: { children: ReactNode }) {
-  const { setDatas, datas, setErrorMsg } = useAppContext();
-  const [isLoading, setIsLoading] = useState(false);
+  const { setDatas, datas, setErrorMsg, error } = useAppContext();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchDatas = async () => {
@@ -29,11 +31,36 @@ function MainLayout({ children }: { children: ReactNode }) {
         setIsLoading(false);
       } else {
         setErrorMsg(resp.error || "Houve um erro interno");
+        console.log("Erro no fetch");
+        console.log(resp.error);
       }
     };
+
+    if (!datas.datas.monthStatus.length) {
+      fetchDatas();
+      setTimeout(() => {
+        if (!datas.datas.monthStatus.length) {
+          setIsLoading(false);
+          setErrorMsg("Servidor nao está respondendo");
+        }
+      }, 15000);
+    } else {
+      setIsLoading(false);
+    }
   }, [setDatas, datas.datas.monthStatus.length, setErrorMsg]);
 
-  if (isLoading) return <p>Is loading ...</p>;
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <Spinner />
+      </div>
+    );
+
+  if (error) {
+    <div className="flex items-center justify-center h-screen">
+      <Error />;
+    </div>;
+  }
   return (
     <div>
       <nav>

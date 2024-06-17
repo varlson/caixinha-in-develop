@@ -7,8 +7,8 @@ function Spinner() {
       visible={true}
       height="100"
       width="100"
-      color="#4fa94d"
-      secondaryColor="#4fa94d"
+      color="#0c3ef5"
+      secondaryColor="#0c2378"
       radius="12.5"
       ariaLabel="mutating-dots-loading"
       wrapperStyle={{}}

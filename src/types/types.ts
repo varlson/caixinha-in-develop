@@ -5,6 +5,7 @@ export type Fines = {
   desc: string;
 };
 export type MonthStatus = {
+  resident_name: string;
   months: (string | boolean)[];
 };
 export type Expenses = {
