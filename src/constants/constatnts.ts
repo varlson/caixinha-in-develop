@@ -321,23 +321,23 @@ export const damyresume = {
 
 export const links = [
   {
-    label: "Escala de máquina",
-    href: "/escala",
-    desc: "Escala de Uso de Máquina",
-  },
-  {
-    label: "Planilha de casa",
+    label: "Planilha da Caixinha",
     href: "https://docs.google.com/spreadsheets/d/1OuQtXBRgLzr3VOJA2k0nLXBq43CTnqTROh24k_u7JbY/edit?usp=sharing",
     desc: "Planilha de Caixinha",
   },
   {
-    label: "Compra",
-    href: "https://docs.google.com/document/d/1X2IUqo6GbtlCnFL-W6WSKdrLa-fidaFQihLW7BbeHsg/edit?usp=drive_link",
+    label: "Lista de Compras",
+    href: "https://docs.google.com/document/d/1X2IUqo6GbtlCnFL-W6WSKdrLa-fidaFQihLW7BbeHsg/edit?usp=sharing",
     desc: "Lista de compras",
   },
   {
-    label: "Protocolo de faxina",
-    href: "https://drive.google.com/file/d/1vxvxLvshh0NJrT5R5QILidYfj-H4S7-S/view?usp=drive_link",
-    desc: "Proto de faxina",
+    label: "Protocolo de Faxina",
+    href: "https://drive.google.com/file/d/1vxvxLvshh0NJrT5R5QILidYfj-H4S7-S/view?usp=sharing",
+    desc: "Protocolo de faxina",
+  },
+  {
+    label: "Escala de Uso de Máquina",
+    href: "https://drive.google.com/file/d/1RYXsaA9eiz_w2AQGzCXwkKJL-7FnpiZZ/view?usp=drive_link",
+    desc: "Escala de Uso de Máquina",
   },
 ];

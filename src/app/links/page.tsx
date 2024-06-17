@@ -18,6 +18,7 @@ function Page() {
             <Link
               className="underline underline-offset-2 text-blue-600"
               href={link.href}
+              target="blank"
             >
               {link.label}
             </Link>
