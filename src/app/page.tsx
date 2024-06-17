@@ -7,6 +7,9 @@ export default function Home() {
   return (
     <div>
       <Resume />
+      <div className="my-2 p-2">
+        <p className="font-semibold text-xl">Últimas Despesas</p>
+      </div>
       <div className="shadow-md mt-4">
         {datas.datas.purchase.slice(0, 2).map((purchase, index) => (
           <PurchaseCard key={index} {...purchase} />
