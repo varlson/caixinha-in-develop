@@ -69,7 +69,7 @@ function MainLayout({ children }: { children: ReactNode }) {
       <main className="bg-appLigth overflow-scroll h-[calc(100vh-160px)] p-2">
         {children}
       </main>
-      <footer>
+      <footer className="fixed w-full bottom-5">
         <Footer />
       </footer>
     </div>
